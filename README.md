@@ -34,12 +34,20 @@ In natural language processing (NLP), organizing large text collections is impor
 These datasets allow us to see how well each model works with different types of content and complexity.
 
 ## Preprocessing
-In our topic modeling experiment, we applied several preprocessing techniques tailored to the specific requirements of each modeling approach. Initially, we performed standard text cleaning, including removing stop words, punctuation, and performing tokenization. For models like LDA and NMF, we employed lemmatization to reduce words to their base forms, aiming to improve interpretability by grouping similar terms. Additionally, we transformed our text data into a suitable format, such as a bag-of-words representation for LDA and NMF and embeddings for BERTTopic and ETM. For more complex transformer-based models like LLama and Gemini. We did not do any preprocessing, because it did not improve our results.
-To prepare the data, we performed these steps:
-- **Text Cleaning**: Removed punctuation, URLs, and email addresses.
-- **Stopword Removal**: Removed common words that don't add much meaning.
-- **Tokenization** and **Bag of Words (BoW)**: Prepared the text for modeling.
-- Additional processing for specific models, like converting words to their root forms and preparing embeddings for FastText.
+In our topic modeling experiment, we applied several preprocessing techniques tailored to the specific requirements of each modeling approach, including lowercasing, punctuation removal, stopword elimination, and handling URLs and email addresses. In the table below, you can see which preprocessing steps were applied to each model.
+- ### Preprocessing Summary
+
+| **Preprocessing Step**         | **Classic Models (LDA, NMF)** | **Pre-trained Models (ETM, BERTopic)** | **LLMs**  |
+|---------------------------------|-------------------------------|----------------------------------------|-----------|
+| Lowercasing                     | ✔                             | ✔                                      | ✘         |
+| Removing Punctuation            | ✔                             | ✔                                      | ✘         |
+| Removing Numbers                | ✔                             | ✔                                      | ✘         |
+| Replacing URLs with Placeholders| ✔                             | ✔                                      | ✘         |
+| Replacing Email with Placeholders| ✔                             | ✔                                      | ✘         |
+| Removing Stopwords              | ✔                             | ✔ (only for ETM)                       | ✘         |
+| Stemming                        | ✘                             | ✔ (only for ETM)                       | ✘         |
+| Lemmatization                   | ✔                             | ✘                                      | ✘         |
+
 
 ## Model Training
 
@@ -53,6 +61,7 @@ We trained three types of topic models:
 ### Metrics
 We evaluated each model using these measures:
 - **Purity**: Checks how well topics align with true categories.
+- **accuracy**: Measures the proportion of correctly classified documents.
 - **Normalized Mutual Information (NMI)**: Measures similarity between predicted topics and actual categories.
 - **F1 Score**: Balances precision and recall for topic assignment.
 - **Training and Response Times**: Measures how much time each model takes to train and make predictions.
@@ -65,13 +74,6 @@ We evaluated each model using these measures:
 - **LLMs**: Highest accuracy, especially with complex topics, but very resource-intensive and slow.
 
 This shows a trade-off between accuracy and speed, where simpler models work well for basic needs, but LLMs perform better on challenging data if resources are available.
-
-## Future Work
-
-1. **Improving LLM Prompts**: Testing better prompts to help LLMs understand topics more accurately.
-2. **Expanding to More Data Types**: Trying models on other types of content, like product reviews or social media posts.
-3. **Using Feedback to Improve Models**: Allowing users to give feedback on topics to refine the model.
-4. **Adding More Evaluation Metrics**: Using additional metrics, like topic coherence, to get a more complete view of model performance.
 
 ## References
 
