@@ -16,7 +16,6 @@ In this project, we were inspired by the paper titled "Mapping climate themes fr
 - [Model Training](#model-training)
 - [Evaluation](#evaluation)
 - [Results and Discussion](#results-and-discussion)
-- [Future Work](#future-work)
 - [References](#references)
 
 ---
