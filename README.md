@@ -27,9 +27,8 @@ In natural language processing (NLP), organizing large text collections is impor
 
 ## Datasets
 
-We used two datasets:
-1. `BBC News`: Contains 2250 categorized news articles [[3]](#3).
-2. `20 Newsgroups`: Contains about 18,000 categorized emails [[6]](#6). \
+1. [`BBC News`](https://drive.google.com/file/d/1TU8mkfBuqmPh8xoAxMuAY8icvRyK_eVn/view?usp=sharing): Contains 2250 categorized news articles [[3]](#3).
+2. [`20 Newsgroups`](https://drive.google.com/file/d/1ARU6-0R9HWBRHBwr3AHzJkA1oOZvRdfG/view?usp=sharing): Contains about 18,000 categorized emails [[6]](#6). \
    We modified the initial dataset **20 Newsgroups** by reducing the number of labels from 20 to 7. This adjustment was made to investigate whether it would improve the performance of the models, particularly the traditional and pre-trained models
 
 These datasets allow us to see how well each model works with different types of content and complexity.
