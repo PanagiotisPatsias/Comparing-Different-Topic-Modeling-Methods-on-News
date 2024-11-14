@@ -35,7 +35,7 @@ We used two datasets:
 These datasets allow us to see how well each model works with different types of content and complexity.
 
 ## Preprocessing
-
+In our topic modeling experiment, we applied several preprocessing techniques tailored to the specific requirements of each modeling approach. Initially, we performed standard text cleaning, including removing stop words, punctuation, and performing tokenization. For models like LDA and NMF, we employed lemmatization to reduce words to their base forms, aiming to improve interpretability by grouping similar terms. Additionally, we transformed our text data into a suitable format, such as a bag-of-words representation for LDA and NMF and embeddings for BERTTopic and ETM. For more complex transformer-based models like LLama and Gemini. We did not do any preprocessing, because it did not improve our results.
 To prepare the data, we performed these steps:
 - **Text Cleaning**: Removed punctuation, URLs, and email addresses.
 - **Stopword Removal**: Removed common words that don't add much meaning.
