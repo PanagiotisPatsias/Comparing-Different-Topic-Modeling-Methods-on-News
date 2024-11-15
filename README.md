@@ -50,7 +50,7 @@ In our topic modeling experiment, we applied several preprocessing techniques ta
 
 ## Compared Models
 
-We trained three types of topic models:
+We compared three types of topic models:
 1. **Classic Models**: Latent Dirichlet Allocation (LDA) and Non-negative Matrix Factorization (NMF).
 2. **Pre-trained Models**: Embedded Topic Model (ETM) and BERTopic, which use word embeddings for better topic grouping.
 3. **Large Language Models (LLMs)**: Gemini and Hermes-3-Llama, advanced models for more accurate topic understanding.
