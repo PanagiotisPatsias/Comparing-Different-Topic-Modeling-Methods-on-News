@@ -48,7 +48,7 @@ In our topic modeling experiment, we applied several preprocessing techniques ta
 | Lemmatization                   | ✔                             | ✘                                      | ✘         |
 
 
-## Compared Models
+## Model Training
 
 We compared three types of topic models:
 1. **Classic Models**: Latent Dirichlet Allocation (LDA) and Non-negative Matrix Factorization (NMF).
