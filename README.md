@@ -16,7 +16,6 @@ In this project, we were inspired by the paper titled "Mapping climate themes fr
 - [Model Training](#model-training)
 - [Evaluation](#evaluation)
 - [Results and Discussion](#results-and-discussion)
-- [Future Work](#future-work)
 - [References](#references)
 
 ---
@@ -77,14 +76,6 @@ This shows a trade-off between accuracy and speed, where simpler models work wel
 
 ## References
 
-1. Twitter dataset. https://trec.nist.gov/data/tweets/, 2011. Accessed: 2024-11-12.
-2. Adji B. Dieng, Francisco J. R. Ruiz, and David M. Blei. Topic modeling in embedding spaces. In Proceedings of the 22nd International Conference on Artificial Intelligence and Statistics (AISTATS), pages 1446–1456, 2019.
-3. Derek Greene and Pádraig Cunningham. BBC News Dataset. http://mlg.ucd.ie/datasets/bbc.html, 2006. Accessed: 2024-09-18.
-4. Maarten Grootendorst. BERTopic: Neural topic modeling with a class-based TF-IDF procedure. arXiv preprint arXiv:2203.05794, 2022.
-5. Daniel Jurafsky and James H. Martin. Speech and Language Processing. Draft, 3rd edition, 2023.
-6. Ken Lang. 20 Newsgroups Dataset. http://qwone.com/~jason/20Newsgroups/, 1995. Accessed: 2024-09-18.
-7. Nils Reimers and Iryna Gurevych. Sentence-BERT: Sentence embeddings using Siamese BERT-networks. arXiv preprint arXiv:1908.10084, 2019.
-8. Kaitao Song, Xu Tan, Tao Qin, Jianfeng Lu, and Tie-Yan Liu. MPNet: Masked and permuted pre-training for language understanding. In Proceedings of the 34th Conference on Neural Information Processing Systems (NeurIPS), pages 16857–16867, 2020.
-9. Gemini Team and Petko Georgiev et al. Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context, 2024.
-10. Ryan Teknium, Jeffrey Quesnelle, and Chen Guang. Hermes 3 technical report, 2024.
-11. Swarnalakshmi Umamaheswaran, Vandita Dar, Eliza Sharma, and Jikku Susan Kurian. Mapping climate themes from 2008-2021—an analysis of business news using topic models. IEEE Access, 11:26554–26565, 2023.
+1. Derek Greene and Pádraig Cunningham. BBC News Dataset. http://mlg.ucd.ie/datasets/bbc.html, 2006. Accessed: 2024-09-18.
+2. Ken Lang. 20 Newsgroups Dataset. http://qwone.com/~jason/20Newsgroups/, 1995. Accessed: 2024-09-18.
+
