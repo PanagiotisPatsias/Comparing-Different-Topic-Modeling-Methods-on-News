@@ -1,0 +1,9 @@
+pandas
+fasttext
+bertopic
+sklearn
+gensim
+scipy
+matplotlib
+gdown
+bertopic
